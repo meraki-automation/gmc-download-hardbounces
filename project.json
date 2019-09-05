@@ -3,6 +3,8 @@
   "description": "Download hardbounces from 'Autopilot'",
   "main": "Main.xaml",
   "dependencies": {
+    "Microsoft.Activities": "[1.0.1]",
+    "UiPath.Credentials.Activities": "1.1.6479.13204",	
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
     "UiPath.System.Activities": "[19.7.0]",
