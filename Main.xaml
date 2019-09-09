@@ -54,9 +54,9 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Call DownloadHardbounces" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Autopilot/DownloadHardbouncesList.xaml">
       <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="outHardbouncesInputFile">[savedFile]</OutArgument>
         <InArgument x:TypeArguments="x:String" x:Key="inFilePrefix">C:\Robots\GMC\01Downloads\hardbounces</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="inFileSuffix">.original.csv</InArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="outHardbouncesInputFile">[savedFile]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Clara" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hardbounces file saved to:&quot;+vbCrLf+savedFile]" TopMost="True" />
