@@ -124,28 +124,28 @@
                   <av:PointCollection x:Key="ConnectorLocation">292,415.02 292,474.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:RetryScope DisplayName="Retry Export Contact List" sap:VirtualizedContainerService.HintSize="678,2813" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="[TimeSpan.FromSeconds(10)]">
+              <ui:RetryScope DisplayName="Retry Export Contact List" sap:VirtualizedContainerService.HintSize="578,2288" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="[TimeSpan.FromSeconds(10)]">
                 <ui:RetryScope.ActivityBody>
                   <ActivityAction>
-                    <Sequence DisplayName="Export Contact List" sap:VirtualizedContainerService.HintSize="636,2632" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <Sequence DisplayName="Export Contact List" sap:VirtualizedContainerService.HintSize="536,2107" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'firefox.exe  Autopilot'" sap:VirtualizedContainerService.HintSize="594,2540" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="db7f68ea00ac933f6a3163126ee83691" Selector="&lt;html app='firefox.exe' title='Autopilot' /&gt;">
+                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'firefox.exe  Autopilot'" sap:VirtualizedContainerService.HintSize="494,2015" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="db7f68ea00ac933f6a3163126ee83691" Selector="&lt;html app='firefox.exe' title='Autopilot' /&gt;">
                         <ui:BrowserScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                             </ActivityAction.Argument>
-                            <Sequence sap:VirtualizedContainerService.HintSize="560,2394" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <Sequence sap:VirtualizedContainerService.HintSize="460,1869" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2156" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="418,1631" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="isNoContacts" />
                                 </Sequence.Variables>
@@ -154,13 +154,13 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:UiElementExists DisplayName="Element Exists 'No Contacts'" Exists="[isNoContacts]" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                <ui:UiElementExists DisplayName="Element Exists 'No Contacts'" Exists="[isNoContacts]" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                   <ui:UiElementExists.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b7e07195a0a41ad3cc5b737ae344fbc9" Selector="&lt;webctrl tag='P' innertext='No Contacts Meet Segment Criteria' parentclass='bislr-view bislr-ui-container UiMar-top-15 UiTextCenter' isleaf='1' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
                                   </ui:UiElementExists.Target>
                                 </ui:UiElementExists>
-                                <ui:CheckFalse DisplayName="Check False" ErrorMessage="No contacts to process" Expression="[isNoContacts]" sap:VirtualizedContainerService.HintSize="476,87" sap2010:WorkflowViewState.IdRef="CheckFalse_2" />
-                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Button'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                                <ui:CheckFalse DisplayName="Check False" ErrorMessage="No contacts to process" Expression="[isNoContacts]" sap:VirtualizedContainerService.HintSize="376,87" sap2010:WorkflowViewState.IdRef="CheckFalse_2" />
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Button'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -175,7 +175,7 @@
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="638a2dd65aad75a6d11824dc8434b9a7" Selector="&lt;webctrl id='contacts-header' tag='DIV' /&gt;&lt;webctrl tag='DIV' class='*iconBtn--carotDown*' /&gt;" WaitForReady="INTERACTIVE" />
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Export Segment'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Export Segment'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -190,7 +190,7 @@
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="f9b23fa660d4ae4f414d2dafd8952a3c" Selector="&lt;webctrl tag='DIV' class=' bislr-view bislr-ui-container bislr-label' innertext='Export Segment' /&gt;" WaitForReady="INTERACTIVE" />
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <Sequence sap2010:Annotation.AnnotationText="TODO: This should be a component in a library" DisplayName="Save File" sap:VirtualizedContainerService.HintSize="476,1499" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <Sequence sap2010:Annotation.AnnotationText="TODO: This should be a component in a library" DisplayName="Save File" sap:VirtualizedContainerService.HintSize="376,974" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="HardBounceFile" />
                                     <Variable x:TypeArguments="x:String" Name="FilePrefix" />
@@ -202,7 +202,7 @@
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Set Target File Path" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign DisplayName="Set Target File Path" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[HardBounceFile]</OutArgument>
                                     </Assign.To>
@@ -210,13 +210,13 @@
                                       <InArgument x:TypeArguments="x:String">[inFilePrefix+DateTime.Now().toString(" yyMMdd_HHmm")+inFileSuffix]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Save File Window" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="WindowScope_3" Selector="&lt;wnd app='firefox.exe' cls='MozillaDialogClass' title='Opening*' /&gt;">
+                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Save File Window" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WindowScope_3" Selector="&lt;wnd app='firefox.exe' cls='MozillaDialogClass' title='Opening*' /&gt;">
                                     <ui:WindowScope.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,433" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,437" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -255,7 +255,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:WindowScope>
-                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach File Name Dialog" sap:VirtualizedContainerService.HintSize="434,688" sap2010:WorkflowViewState.IdRef="WindowScope_4" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Enter name of file to save to…' /&gt;">
+                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach File Name Dialog" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WindowScope_4" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Enter name of file to save to…' /&gt;">
                                     <ui:WindowScope.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -299,18 +299,23 @@
                                     </ui:WindowScope.Body>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:WindowScope>
-                                  <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="434,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitActive="False" WaitVisible="False">
+                                  <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitActive="False" WaitVisible="False">
                                     <ui:WaitUiElementAppear.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;webctrl tag='DIV' class=' *bislr-ui-button flat-btn flat-btn--large flat-btn--darkGreen*' innertext='Ok, got it*' /&gt;" WaitForReady="COMPLETE" />
                                     </ui:WaitUiElementAppear.Target>
                                   </ui:WaitUiElementAppear>
-                                  <Delay Duration="[TimeSpan.FromSeconds(3)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_8" />
-                                  <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                  <ui:Callout Content="Waiting 20 seconds for file to download" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Callout_1" Timer="3000" Title="Clara - Robot">
+                                    <ui:Callout.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;webctrl tag='DIV' class=' *bislr-ui-button flat-btn flat-btn--large flat-btn--darkGreen*' innertext='Ok, got it*' /&gt;" WaitForReady="INTERACTIVE" />
+                                    </ui:Callout.Target>
+                                  </ui:Callout>
+                                  <Delay DisplayName="Delay 20 Seconds" Duration="[TimeSpan.FromSeconds(20)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="si:FileInfo">[ResultFileInfo]</OutArgument>
                                     </Assign.To>
@@ -318,8 +323,8 @@
                                       <InArgument x:TypeArguments="si:FileInfo">[New FileInfo(HardBounceFile)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Downloaded &quot;+HardBounceFile+vbCrLf+&quot;File exists:&quot;+ResultFileInfo.Exists.ToString+vbCrLf+&quot;Size: &quot;+ResultFileInfo.Length.ToString]" />
-                                  <Assign DisplayName="Set Target File Path" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Downloaded &quot;+HardBounceFile+vbCrLf+&quot;File exists:&quot;+ResultFileInfo.Exists.ToString+vbCrLf+&quot;Size: &quot;+ResultFileInfo.Length.ToString]" />
+                                  <Assign DisplayName="Set Target File Path" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[outHardbouncesInputFile]</OutArgument>
                                     </Assign.To>
@@ -329,7 +334,7 @@
                                   </Assign>
                                 </Sequence>
                               </Sequence>
-                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Dismiss Download Notification" sap:VirtualizedContainerService.HintSize="518,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Dismiss Download Notification" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
                                 <ui:Click.CursorPosition>
                                   <ui:CursorPosition OffsetX="-5" OffsetY="-5" Position="BottomRight" />
                                 </ui:Click.CursorPosition>
